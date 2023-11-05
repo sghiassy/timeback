@@ -2,7 +2,7 @@
 
 ## Original README
 
-The original Vercel provided README that came with the starter template can be found at !(VERCEL_README.md)[VERCEL_README.md]
+The original Vercel provided README that came with the starter template can be found at [VERCEL_README.md](./VERCEL_README.md)
 
 ## Dev Setup
 
