@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^0.3.0
     version: 0.3.0(@ianvs/prettier-plugin-sort-imports@3.7.2)(prettier@2.8.8)
   supabase:
-    specifier: ^1.63.1
-    version: 1.64.8
+    specifier: ^1.110.1
+    version: 1.110.1
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
@@ -738,6 +738,15 @@ packages:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
+
+  /agent-base@7.1.0:
+    resolution: {integrity: sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg==}
+    engines: {node: '>= 14'}
+    dependencies:
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /ajv@6.12.6:
@@ -1957,6 +1966,16 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
+  /https-proxy-agent@7.0.2:
+    resolution: {integrity: sha512-NmLNjm6ucYwtcUmL7JQC1ZQ57LmHP4lT15FQ8D61nak1rO6DH+fz5qNK2Ap5UN4ZapYICE3/0KodcLYSPsPbaA==}
+    engines: {node: '>= 14'}
+    dependencies:
+      agent-base: 7.1.0
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
@@ -3142,15 +3161,18 @@ packages:
       pirates: 4.0.5
       ts-interface-checker: 0.1.13
 
-  /supabase@1.64.8:
-    resolution: {integrity: sha512-HrJe7vJx8he1JdgUn8if+JxZkDugD030xNqy9Jxlbs8X/lNuEnmo7EW0uDJsMVTz6L8hXTuafHlJy4HiULa1Qw==}
+  /supabase@1.110.1:
+    resolution: {integrity: sha512-pQVfbs/n8ZBDuSDv6YJKIH1Uh/QBRxjp6pLW52YkKgjgfwndlKwKuJoPiuWDxBkRG1QXxmCHi3Hk+JeNx9/FRg==}
     engines: {npm: '>=8'}
     hasBin: true
     requiresBuild: true
     dependencies:
       bin-links: 4.0.1
+      https-proxy-agent: 7.0.2
       node-fetch: 3.3.1
-      tar: 6.1.15
+      tar: 6.2.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /supports-color@5.5.0:
@@ -3214,8 +3236,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /tar@6.1.15:
-    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
+  /tar@6.2.0:
+    resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
     engines: {node: '>=10'}
     dependencies:
       chownr: 2.0.0
