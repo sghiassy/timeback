@@ -7,8 +7,8 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 const meta = {
-  title: 'Next.js Subscription Starter',
-  description: 'Brought to you by Vercel, Stripe, and Supabase.',
+  title: 'Timeback Website',
+  description: 'Timeback Subscription page',
   cardImage: '/og.png',
   robots: 'follow, index',
   favicon: '/favicon.ico',
@@ -50,7 +50,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black loading">
         <SupabaseProvider>
-          {/* @ts-expect-error */}
           <Navbar />
           <main
             id="skip"
