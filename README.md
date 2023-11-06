@@ -15,3 +15,4 @@ Use NVM to install the specified node version in the `.nvrmrc` file.
 In addition to installing Node using NVM, you'll need to manually install these libraries
 
 - `pnpm`: `npm install -g pnpm`
+- `vercel`: `npm i -g vercel`
